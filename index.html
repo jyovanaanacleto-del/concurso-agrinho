@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <h1>EcoAgro</h1>
+        </div>
+        <nav>
+            <button id="btn-tema" aria-label="Alternar modo escuro">Alternar Tema 🌓</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>Agro forte, futuro sustentável:<br><span class="subtitulo">equilíbrio entre produção e meio ambiente</span></h2>
+            <p>O grande desafio do século XXI é alimentar uma população crescente garantindo a integridade dos nossos ecossistemas. A tecnologia e as boas práticas agrícolas provam que é possível produzir em alta escala protegendo a biodiversidade, economizando água e reduzindo a pegada de carbono.</p>
+        </section>
+
+        <section id="interativo-dicas" class="card">
+            <h3>Pilar da Sustentabilidade no Campo</h3>
+            <p id="texto-pilar">Clique no botão abaixo para explorar os fundamentos do equilíbrio entre a produção agrícola e a preservação ambiental.</p>
+            <button id="btn-proximo-pilar">Conhecer Próximo Pilar</button>
+        </section>
+
+        <section id="calculadora-eco" class="card">
+            <h3>Simulador de Impacto Positivo</h3>
+            <p>Descubra o impacto estimado ao adotar práticas sustentáveis em uma propriedade:</p>
+            
+            <form id="form-sustentavel" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label for="nome-usuario">Seu Nome:</label>
+                    <input type="text" id="nome-usuario" placeholder="Ex: João Silva" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hectares">Tamanho da área simulada (em hectares):</label>
+                    <input type="number" id="hectares" min="1" placeholder="Ex: 50" required>
+                </div>
+
+                <button type="button" id="btn-calcular">Calcular Impacto</button>
+            </form>
+
+            <div id="resultado-calculo" class="escondido">
+                </div>
+        </section>
+
+        <section id="creditos">
+            <h3>Créditos e Metodologia</h3>
+            <p><strong>Conteúdo Textual:</strong> 100% autoral, desenvolvido com base nos estudos do Concurso Agrinho 2026.</p>
+            <p><strong>Identidade Visual:</strong> Cores e layout projetados no Figma/Canva pelo estudante.</p>
+            <p><strong>Imagens/Ícones:</strong> Vetores e mídias limpas obtidos de fontes públicas e customizados no Paint/Canva.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para o Concurso Agrinho - Categoria Programação (Ensino Médio)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
